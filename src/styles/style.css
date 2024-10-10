@@ -15,3 +15,32 @@ body {
     /* min-height: 100vh; */
     margin: 0;
 }
+
+.nav{
+    background-color: var(--color-black);    
+    font-family: var(--font-titulos);
+}
+
+.nav div{
+    padding: var(--padding-xs);
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: var(--font-size-content);
+    padding: var(--padding-xs);
+}
+
+.nav ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: var(--padding-xs);
+}
+
+.nav ul li a:hover{
+    opacity: var(--opacity-white);
+}
