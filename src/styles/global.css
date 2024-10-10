@@ -1,0 +1,59 @@
+:root {
+    /* FONTS */
+    --font-textos: "Lato", sans-serif;
+    --font-titulos: "Oswald", sans-serif;
+    
+    /* COLORS */
+    --color-white: #ffffff;
+    --color-darkgray: #2d2a2a;
+    --color-secondary: #c7a17a;
+    --color-grey: #595959;
+    --opacity-back: 0.3;
+    --opacity-white: 0.8;
+    
+    --img-secretos-barista: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/bannerpromo_cafe_02_v2.jpg');
+    --img-nuestros-platos: url("https://tiendadecafe.com.ar/wp-content/uploads/2021/04/bannerpromo_plato_02_v2.jpg");
+    --img-tc-intensidad: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/capsulas_intensidad-600x600.jpg');
+    --img-tc-capsula-dorada: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/capsulas_taza_barista-600x600.jpg');
+    --img-tc-capsula-violeta: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/capsulas_taza_colombia-600x600.jpg');
+    --img-tc-capsula-marron: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/capsulas_taza_minka-600x600.jpg');
+    --img-tc-capsula-negra: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/capsulas_taza_scegliere-600x600.jpg');
+    --img-footer: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/home-tienda.jpg?id=425');
+    --img-cual-cafe: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/04/packhome_01-768x634.jpg');
+    --img-detalle-barista-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_BARISTA_frente_prueba-600x600.jpg');
+    --img-detalle-barista-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_BARISTA_frente-600x600.jpg');
+    --img-detalle-brasil-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_BRASIL_frente_prueba-600x600.jpg');
+    --img-detalle-brasil-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_BRASIL_frente-600x600.jpg');
+    --img-detalle-colombia-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_COLOMBIA_frente_prueba-600x600.jpg');
+    --img-detalle-colombia-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg');
+    --img-detalle-descaf-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_descaf_frente-600x600.jpg');
+    --img-detalle-descaf-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_DESCAFEINADO_frente_prueba-600x600.jpg');
+    --img-detalle-minka-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_minka_frente_prueba-600x600.jpg');
+    --img-detalle-minka-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_MINKA_frente-600x600.jpg');
+    --img-detalle-scegliere-back: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg');
+    --img-detalle-scegliere-front: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_SCEGLIERE2_frente_prueba-600x600.jpg');
+    --img-portada-cafe: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/sidebar_cafe01.jpg');
+    --img-logo-tienda-de-cafe: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/02/tienda-de-cafe.png');
+    
+    /* FONT SIZES */
+    --font-size-titulo-principal: 56px;/*tmb line-height: 60px;*/
+    --font-size-titulos-secundarios: 30px;
+    --font-size-tarjetas-titulo: 36px;
+    --font-size-tarjetas-btn: 36px;
+    --font-size-seccion-titulo: 20px;
+    --font-size-content: 14px;
+    --font-size-titulos-intermedios: 14px;
+    --font-size-footer-titulos: 16px;
+    --font-size-copyright: 11px;
+    
+    /* PADDINGS */
+    --padding-xxs: 6px;
+    --padding-xs: 16px;
+    
+    /* MARGINGS */
+    --margin-xs: 15px;
+    --margin-s: 30px;
+    
+    /* BORDER RADIUS */
+    --border-btn-redes: 20px;
+    }

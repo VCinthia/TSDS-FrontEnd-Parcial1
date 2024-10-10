@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Body styles --- */
+body {
+    font-family: var(--font-textos);
+    color: var(--color-darkgray);
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* min-height: 100vh; */
+    margin: 0;
+}
