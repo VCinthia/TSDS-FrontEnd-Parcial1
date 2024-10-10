@@ -44,3 +44,7 @@ body {
 .nav ul li a:hover{
     opacity: var(--opacity-white);
 }
+
+section{
+    margin: var(--margin-xs);
+}
