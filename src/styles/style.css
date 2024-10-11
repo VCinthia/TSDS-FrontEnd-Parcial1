@@ -54,3 +54,23 @@ body {
 section{
     margin: var(--margin-s);
 }
+
+.banner-pre-footer{
+    margin: 0;
+    background: var(--img-footer);
+}
+
+.inf{
+    padding: var(--padding-s);
+}
+
+.copyright{
+    border-top: solid 1px var(--color-darkgray);
+}
+
+.copyright p{
+    color: var(--color-white);
+    opacity: var(--opacity-white);
+    font-size: var(--font-size-copyright);
+    padding-bottom: 2px;
+}
