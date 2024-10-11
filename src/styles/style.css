@@ -16,9 +16,8 @@ body {
     margin: 0;
 }
 
-.nav{
-    background-color: var(--color-black);    
-    font-family: var(--font-titulos);    
+.nav, .inf{
+    background-color: var(--color-black);     
 }
 
 .nav div{
@@ -34,11 +33,10 @@ body {
     flex-direction: row;
     font-size: var(--font-size-content);
     padding: var(--padding-xxs);
-    /* margin-left: var(--margin-s);
-    margin-right: var(--margin-s); */
 }
 
 .nav ul li a{
+    font-family: var(--font-titulos);   
     color: var(--color-white);
     text-decoration: none;
     padding: var(--padding-xs);
