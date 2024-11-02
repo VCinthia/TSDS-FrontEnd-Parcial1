@@ -6,7 +6,7 @@
 
 /* --- Body styles --- */
 body {
-    font-family: var(--font-textos);
+    font-family: var(--font-text);
     color: var(--color-darkgray);
     background-color: var(--color-white);
     display: flex;
@@ -16,118 +16,118 @@ body {
     margin: 0;
 }
 
-.nav, .inf{
+.nav, .inf {
     background-color: var(--color-black);     
 }
 
-.nav div{
+.nav div {
     padding-right: var(--padding-s);
     justify-content: flex-start;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style: none;
-    align-items: center;;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
     font-size: var(--font-size-content);
     padding: var(--padding-xxs);
 }
 
-.nav ul li a{
-    font-family: var(--font-titulos);   
+.nav ul li a {
+    font-family: var(--font-title);   
     color: var(--color-white);
     text-decoration: none;
     padding: var(--padding-xs);
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     opacity: var(--opacity-white);
 }
 
-.nav-logo{
-    max-width: 80px;
-    padding: 5px 0;
+.nav-logo {
+    max-width: 5em; /* 80px */
+    padding: 0.3125em 0; /* 5px 0 */
 }
 
-.footer-logo{
-    max-width: 126px;
+.footer-logo {
+    max-width: 7.875em; /* 126px */
     margin: 0;
 }
 
-section{
+section {
     margin: var(--margin-s);
 }
 
-.banner-pre-footer{
+.banner-pre-footer {
     margin: 0;
     background: var(--img-footer);
 }
 
-.inf{
+.inf {
     padding: var(--padding-s);
 }
 
-.copyright{
-    border-top: solid 1px var(--color-darkgray);
+.copyright {
+    border-top: solid 0.0625em var(--color-darkgray); /* 1px */
 }
 
-footer{
+footer {
     flex-direction: column;
 }
 
-.footer-section{
+.footer-section {
     display: flex;
     justify-content: space-between;
-    align-items:start;
+    align-items: start;
     flex-direction: row;
 }
 
-.footer-section-col{
+.footer-section-col {
     padding-top: var(--padding-s);
     padding-bottom: var(--padding-s);
 }
 
-.footer-section-col h3{
+.footer-section-col h3 {
     color: var(--color-secondary);
-    font-size: var(--font-size-footer-titulos);
-    font-family: var(--font-titulos);
+    font-size: var(--font-size-footer-title);
+    font-family: var(--font-title);
     padding-bottom: var(--padding-xxs-2);
 }
 
-.footer-section-col ul{
+.footer-section-col ul {
     display: flex;
     list-style: none;
     align-items: flex-start;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
 }
 
-.footer-section-col ul li{
+.footer-section-col ul li {
     padding-bottom: var(--padding-xxs-2);
 }
 
-.footer-section-col ul li a{
-    font-family: var(--font-textos);   
+.footer-section-col ul li a {
+    font-family: var(--font-text);   
     font-size: var(--font-size-content);
     font-weight: bold;
     color: var(--color-grey);
     text-decoration: none;
 }
 
-.footer-section-col ul li a:hover{
+.footer-section-col ul li a:hover {
     color: var(--color-white);
 }
 
-.newsletter{
+.newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.newsletter form{
+.newsletter form {
     justify-content: space-between;
     padding-top: var(--padding-xxs);
     padding-bottom: var(--padding-xs);
@@ -137,41 +137,40 @@ footer{
 button {
     background: none;
     resize: none;
-    border: 1px solid var(--color-grey);
+    border: 0.0625em solid var(--color-grey); /* 1px */
     color: var(--color-grey);
     font-weight: bold;
     padding: var(--padding-xxs-2);
     box-sizing: border-box;
 }
 
-.newsletter form
-button {
-    border: 1px solid var(--color-secondary);
+.newsletter form button {
+    border: 0.0625em solid var(--color-secondary); /* 1px */
     background-color: var(--color-secondary);
     color: var(--color-black);
     cursor: pointer;
 }
 
-.fa-brands{
-    max-width: 12px;
+.fa-brands {
+    max-width: 0.75em; /* 12px */
     cursor: pointer;
 }
 
-.footer-section-col .social-icons{
+.footer-section-col .social-icons {
     padding-top: var(--padding-xxs);
 }
 
-.footer-section-col .social-icons a{    
+.footer-section-col .social-icons a {    
     background-color: var(--color-grey);
     color: var(--color-white);
     margin: var(--padding-xxs);
-    padding: 5px 9px;
-    border-radius: var(--border-btn-redes);
+    padding: 0.3125em 0.5625em; /* 5px 9px */
+    border-radius: var(--border-btn-social-media);
 }
 
-.copyright p{
+.copyright p {
     color: var(--color-white);
     opacity: var(--opacity-white);
     font-size: var(--font-size-copyright);
-    padding-bottom: 2px;
+    padding-bottom: 0.125em; /* 2px */
 }
