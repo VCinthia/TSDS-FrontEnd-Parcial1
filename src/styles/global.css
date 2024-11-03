@@ -16,7 +16,8 @@
     --opacity-white: 0.8;
 
     /* IMG */
-    --img-footer: url('../img/common/banner-bottom.webp');
+    --img-banner-bottom: url('../img/common/banner-bottom.webp');
+    --img-banner-top: url('../img/common/banner-top.webp');
         
     /* FONT SIZES */
     --font-size-title-main: 3.5em;

@@ -60,9 +60,38 @@ section {
     margin: var(--margin-s);
 }
 
+.banner-top{
+    margin: 0;
+    background: var(--img-banner-top);
+    font-family: var(--font-title);
+    color: var(--color-white);
+    padding: 25vh 3em!important;
+}
+
+.banner-top div{
+    padding-bottom: var(--padding-s);
+    color: var(--color-white);
+}
+
+.banner-top h1:first-of-type {
+    font-size: var(--font-size-card-title);
+    font-weight: 300;
+}
+
+.banner-top h1:last-of-type {
+    font-size: var(--font-size-title-main);
+    font-weight: bold;
+}
+
+.banner-top p {
+    font-family: var(--font-text);
+}
+
+/*//////////////////*/
+
 .banner-pre-footer {
     margin: 0;
-    background: var(--img-footer);
+    background: var(--img-banner-bottom);
     font-family: var(--font-title);
     color: var(--color-white);
     display: flex;
@@ -74,8 +103,7 @@ section {
     padding-bottom: 25vh !important;
 
     background-attachment: scroll !important;
-    background-position: 0cm;
-    
+    background-position: 0cm;    
 }
 
 .banner-pre-footer div{
@@ -104,8 +132,7 @@ section {
     color: var(--color-white);
 }
 
-
-.banner-pre-footer button {
+.banner-pre-footer button, .banner-top button {
     border: 0.13em solid var(--color-white);
     color: var(--color-white);
     cursor: pointer;
