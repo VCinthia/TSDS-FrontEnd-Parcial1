@@ -21,4 +21,16 @@ const ourProducts = [
     }
 ];
 
-export { ourProducts };
+const cards = [
+    {
+        title: "SECRETOS DEL BARISTA",
+        description: "Aprendé a hacer tu café como un experto",
+        img: "../src/img/home-cards/home-card-one.webp"
+    },
+    {
+        title: "NUESTROS PLATOS",
+        description: "Conocé todo lo que podés encontrar en nuestros locales",
+        img: "../src/img/home-cards/home-card-two.webp"
+    },
+];
+export { ourProducts, cards };
