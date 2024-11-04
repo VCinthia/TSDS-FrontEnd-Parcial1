@@ -24,7 +24,7 @@ const ourProducts = [
 const cards = [
     {
         title: "SECRETOS DEL BARISTA",
-        description: "Aprendé a hacer tu café como un experto",
+        description: "Aprendé a hacer tu gin como un experto",
         img: "../src/img/home-cards/home-card-one.webp"
     },
     {

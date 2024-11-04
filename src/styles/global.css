@@ -8,7 +8,7 @@
     --color-black: #111111;
     --color-darkgray: #2d2a2a;
     --color-grey: #e0feef;
-    --color-other: #f7fb68;
+    --color-other: #f2fcdf;
     --color-primary: #c7a17a;
     --color-secondary: #dd4f2d;
 
@@ -36,6 +36,7 @@
     --padding-xxs-2: 0.75em;
     --padding-xs: 1em;
     --padding-s: 1.875em;
+    --padding-m: 3em;
     
     /* MARGINS */
     --margin-xs: 0.9375em;
