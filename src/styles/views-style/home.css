@@ -1,3 +1,5 @@
+/* --- OUR PRODUCTS --- */
+
 .our-products{
     display: flex;
     flex-direction: column;
@@ -50,4 +52,55 @@
 .name-product{
     font-family: var(--font-title);
     color: var(--color-darkgray);
+}
+
+/* --- CARDS --- */
+
+.card-individual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card-individual div {
+    font-family: var(--font-title);
+    width: 100vh;
+    height: 20em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: background-position 1s ease-in-out;
+}
+
+.card-individual div p, .card-individual div h1, .card-individual div button {
+    color: var(--color-white);    
+}
+
+.card-individual div p{
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: var(--font-size-content);
+    font-family: var(--font-text);
+    background-color: var(--color-white);
+    color: var(--color-darkgray);
+    width: fit-content;
+}
+
+.card-individual div button{
+    width: fit-content;
+    font-size: var(--font-size-copyright);
+    background-color: var(--color-darkgray);
+    border: none;
+    cursor: pointer;
+}
+
+.card-individual div:hover {
+    background-position: center top;
 }

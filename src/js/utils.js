@@ -19,5 +19,24 @@ function productsList(products) {
     });
 }
 
+function cardsList(cards) {
+    const slideCardsContainer = document.querySelector(".card-individual");
 
-export { productsList };
+    slideCardsContainer.innerHTML = "";
+
+    cards.forEach((card, index) => {
+        const cardContainer = document.createElement("div");
+
+        cardContainer.style.backgroundImage = `url(${card.img})`;
+
+        cardContainer.innerHTML = `
+                <p>${card.description}</p>
+                <h1 class="section-title">${card.title}</h1>
+                <button>VER</button>
+        `;
+
+        slideCardsContainer.appendChild(cardContainer);
+    });
+}
+
+export { productsList, cardsList };
