@@ -104,3 +104,82 @@
 .card-individual div:hover {
     background-position: center top;
 }
+
+/* --- OUR GIN --- */
+
+.our-gin {
+    margin: 0;
+    background-color: var(--color-other);
+    padding: 2.5em 0;
+}
+
+.our-gin-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.our-gin-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.our-gin-columns-individual {
+    width: 25em;
+    justify-content: space-around;
+    margin: 0 0.5em;    
+}
+
+.our-gin-columns .our-gin-columns-individual:first-of-type{
+    text-align: right;
+    padding: 0 3em 0 0;
+}
+
+.our-gin-columns .our-gin-columns-individual:last-of-type{
+    padding: 0 0 0 3em;
+}
+
+.our-gin-section{
+    padding-bottom: var(--padding-m);
+}
+
+.our-gin-columns-individual h5 {
+    font-family: var(--font-title);
+    font-size: var(--font-size-footer-title);
+    color: var(--color-secondary);
+    padding-bottom: var(--padding-xxs-2);
+}
+
+.our-gin-img {
+    width: 25em;
+    height: 30em;
+    object-fit: cover;
+    object-position: center;    
+}
+
+@media (max-width: 1330px) {
+    .our-gin-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-gin-columns-individual {
+        width: 40em !important;
+        margin: 0.5em;        
+    }
+    
+    .our-gin-columns .our-gin-columns-individual{
+        text-align: left !important;
+    }
+
+    .our-gin-img {
+        width: 40em;
+        height: 30em;
+        object-fit: cover;
+        object-position: center;
+    }
+}
