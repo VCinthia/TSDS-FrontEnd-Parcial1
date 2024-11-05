@@ -7,9 +7,12 @@
     --color-white: #ffffff;
     --color-black: #111111;
     --color-darkgray: #2d2a2a;
+    --color-lightgray: #777;
+    --color-lightgray-2:  rgba(129,129,129,.2);
     --color-grey: #e0feef;
     --color-other: #f2fcdf;
     --color-primary: #c7a17a;
+    --color-primary-hover:#ac8c6c;
     --color-secondary: #dd4f2d;
 
     /* OPACITY */
@@ -39,8 +42,10 @@
     --padding-m: 3em;
     
     /* MARGINS */
+    --margin-xxs: 0.35em;
     --margin-xs: 0.9375em;
     --margin-s: 1.875em;
+    --margin-m: 2.5em;
     
     /* BORDER RADIUS */
     --border-btn-social-media: 1.25em;
