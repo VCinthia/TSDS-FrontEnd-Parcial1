@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--padding-xs);
 }
 
 .work-with-us-title-container {
@@ -20,6 +19,7 @@
 
 .work-with-us p:first-child {
     margin-top: var(--margin-xxs);
+    margin-bottom: var(--margin-xs);
     color: var(--color-primary);
 }
 
@@ -30,12 +30,6 @@
     margin-bottom: var(--margin-s);
 }
 
-.title-divider {
-    width: 120px;
-    height: 2px;
-    background-color: var(--color-primary);
-    border-radius: 50px;
-}
 
 .work-with-us-form {
     display: grid;
@@ -70,6 +64,8 @@
     padding: var(--padding-xs);
     border: 1.5px solid #ccc;
     border-radius: 1px;
+    margin-top: var(--margin-xxs);
+    height: 15em;
 }
 
 .work-with-us-submit-btn-container{

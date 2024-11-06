@@ -17,7 +17,7 @@ body {
 }
 
 .nav, .inf {
-    background-color: var(--color-black);     
+    background-color: var(--color-blue);     
 }
 
 .nav div {
@@ -66,27 +66,56 @@ section {
     margin: 0;
     background: var(--img-banner-top);
     font-family: var(--font-title);
-    color: var(--color-white);
+    color: var(--color-primary);
     padding: 25vh 3em!important;
+    position: relative;
 }
 
+.banner-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1; 
+  }
+
 .banner-top div{
+    position: relative;
     padding-bottom: var(--padding-s);
-    color: var(--color-white);
+    z-index: 2;
 }
 
 .banner-top h1:first-of-type {
     font-size: var(--font-size-card-title);
     font-weight: 300;
+    color: var(--color-white);
+    
 }
 
 .banner-top h1:last-of-type {
     font-size: var(--font-size-title-main);
     font-weight: bold;
+    color: var(--color-primary);
+
 }
 
 .banner-top p {
     font-family: var(--font-text);
+    color: var(--color-white);
+
+}
+
+/* --- divider decorator --- */
+
+.title-divider {
+    width: 120px;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    margin-bottom: var(--margin-s);
 }
 
 /* --- banner-bottom --- */
@@ -105,8 +134,20 @@ section {
     padding-bottom: 25vh !important;
 
     background-attachment: scroll !important;
-    background-position: 0cm;    
+    background-position: 0cm;  
+    position: relative;  
 }
+
+.banner-pre-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1; 
+  }
 
 .banner-pre-footer div{
     display: flex;
@@ -115,6 +156,8 @@ section {
     align-items: center;
     padding-bottom: var(--padding-s);
     color: var(--color-white);
+    position: relative;
+    z-index: 2;
 }
 
 .banner-pre-footer h1:first-of-type {
@@ -125,7 +168,7 @@ section {
 .banner-pre-footer h1:last-of-type {
     font-size: var(--font-size-title-main);
     font-weight: bold;
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .banner-pre-footer p:first-of-type {
@@ -135,10 +178,14 @@ section {
 }
 
 .banner-pre-footer button, .banner-top button {
-    border: 0.13em solid var(--color-white);
+    border: 0.2em solid var(--color-grey);
     color: var(--color-white);
     cursor: pointer;
     padding: 1em 2.3em;
+}
+
+.banner-pre-footer button:hover, .banner-top button:hover{
+    border: 0.2em solid var(--color-white);;
 }
 
 .inf {
@@ -221,10 +268,16 @@ button {
 }
 
 .newsletter form button {
-    border: 0.0625em solid var(--color-secondary);
-    background-color: var(--color-secondary);
-    color: var(--color-black);
+    border: 0.0625em solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
     cursor: pointer;
+    transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+.newsletter form button:hover{
+    border: 0.0625em solid var(--color-primary-hover);
+    background-color: var(--color-primary-hover);
 }
 
 .fa-brands {
@@ -238,7 +291,7 @@ button {
 
 .footer-section-col .social-icons a {    
     background-color: var(--color-grey);
-    color: var(--color-white);
+    color: var(--color-primary);
     margin: var(--padding-xxs);
     padding: 0.3125em 0.5625em;
     border-radius: var(--border-btn-social-media);
