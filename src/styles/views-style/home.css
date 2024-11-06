@@ -65,6 +65,17 @@
     gap: 2em;
 }
 
+.card-individual div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1; 
+  }
+
 .card-individual div {
     font-family: var(--font-title);
     width: 100vh;
@@ -77,10 +88,19 @@
     background-position: center;
     cursor: pointer;
     transition: background-position 1s ease-in-out;
+    position: relative;
 }
 
-.card-individual div p, .card-individual div h1, .card-individual div button {
-    color: var(--color-white);    
+.card-individual div h1{
+    color: var(--color-primary);   
+    position: relative;
+    z-index: 2;
+}
+
+.card-individual div button, .card-individual div p{
+    color: var(--color-white);   
+    position: relative;
+    z-index: 2;
 }
 
 .card-individual div p{
@@ -111,6 +131,11 @@
     margin: 0;
     background-color: var(--color-other);
     padding: 2.5em 0;
+}
+
+.our-gin-title p:first-child{
+    color: var(--color-primary);
+    margin-bottom: var(--margin-xs);
 }
 
 .our-gin-title {
@@ -150,7 +175,7 @@
 .our-gin-columns-individual h5 {
     font-family: var(--font-title);
     font-size: var(--font-size-footer-title);
-    color: var(--color-secondary);
+    color: var(--color-primary);
     padding-bottom: var(--padding-xxs-2);
 }
 
