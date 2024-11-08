@@ -8,7 +8,7 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/views-style/our-gin.css" />
+    <link rel="stylesheet" href="../styles/views-style/tutorials.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,30 +35,36 @@
             </div>
             <li><a href="../views/our-gin.html">NUESTRO GIN</a></li>
             <li><a href="../views/tutorials.html">TUTORIALES</a></li>
-            <li><a href="../views/our-menu.html">NUESTRO MENÚ</a></li>
+            <li><a href="#">NUESTRO MENÚ</a></li>
             <li><a href="#">TRABAJÁ CON NOSOTROS</a></li>
             <li><a href="#">FRANQUICIAS</a></li>
             <li><a href="#">CONTACTO</a></li>
         </ul>
     </nav>
 
-    
-    <!--PRODUCTS SECCTION-->
-    <section class="prod-section">
-        <div id="prod-container" class="prod-container">
-            <!-- Ejemplo de un "prod-item" para mostrar la estructura de cada producto:
-             Este div muestra un "prod-item" con imágenes y título. Los demás "prod-item" se generarán
-             dinámicamente desde "our-gin.js" para evitar duplicación de código y permitir una
-             carga más flexible de productos en la página. -->
-            <div class="prod-item">
-                <div class="img-container">
-                    <img class="default-img" src="../img/our-gin/blu1.jpg" alt="botella Gin Spirito Blu">
-                    <img class="hover-img" src="../img/our-gin/blu2.jpg" alt="botella Gin Spirito Blu con copa">
+    <!--TUTORIALS ACTICLE-->
+    <article class="tutorials-article">
+        <div class="intro">
+            <p>Nuestra intención es que estas guías sirvan como punto de partida. El perfil del gin puede ser influenciado por la elección de botánicos, el tipo de hielo y el agua tónica o mezclador. <br>Cada copa o método de preparación es único, por lo que te recomendamos tomar estos parámetros como sugerencias, no como reglas absolutas.</p>
+            <p>Cuando revises nuestras guías de preparación, verás que utilizamos ml para indicar la cantidad de gin o mezclador. No es un error. En nuestras recetas equiparamos mililitros con gramos para facilitar la medición y precisión en cada preparación.</p>
+            <p>Pequeños tips</p>
+            <p>Cuanto mayor sea el tiempo de maceración, más intenso será el sabor de los botánicos en tu gin.<br>Cuanto más frío el hielo, más lentamente se diluirá, permitiendo que disfrutes el gin por más tiempo sin alterar su sabor.</p>
+            <p>¡Ahora sí, a experimentar y disfrutar de una copa perfecta!</p>
+        </div>
+        <div id="recipes-container" class="recipes-container">
+            <!-- Ejemplo de un "recipes-item" para mostrar la estructura de cada recipe:
+             Este div muestra un recipes-item" con imágen y título. Los demás recipes-item" se generarán
+             dinámicamente desde "tutorials.js" para evitar duplicación de código y permitir una
+             carga más flexible de recipes en la página. -->
+            <div class="recipes-item">
+                <img class="hover-img" src="../img/tutorials/botanico.jpg" alt="gin botánico">
+                <div class="cap">
+                    <h3>BOTÁNICO</h3>
+                    <a href="#">VER PASO A PASO ></a>
                 </div>
-                <h3>Gin Spirito Blu</h3>
             </div>
         </div>
-    </section>
+    </article>
 
 
 
@@ -74,7 +80,7 @@
                     <li><a href="../../index.html">Inicio</a></li>
                     <li><a href="../views/our-gin.html">Nuestro Gin</a></li>
                     <li><a href="#">Locales</a></li>
-                    <li><a href="../views/our-menu.html">Nuestro menú</a></li>
+                    <li><a href="#">Nuestro menú</a></li>
                 </ul>
             </div>
             <div class="footer-section-col">
@@ -105,5 +111,5 @@
         </div>
     </footer>
 </body>
-<script src="../js/our-gin.js"></script>
+<script src="../js/tutorials.js"></script> 
 </html>
