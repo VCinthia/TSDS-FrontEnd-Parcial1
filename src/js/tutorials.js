@@ -13,7 +13,7 @@ const recipts = [
   {
     imgSrc: "../img/tutorials/especiado.jpg",
     imgSrcAlt: "Gin especiado",
-    title: "BESPECIADO",
+    title: "ESPECIADO",
   },
   {
     imgSrc: "../img/tutorials/frutal.jpg",

@@ -159,6 +159,9 @@ section {
     position: relative;
     z-index: 2;
 }
+.banner-pre-footer div:nth-child(2)  {
+    padding: 0;
+}
 
 .banner-pre-footer h1:first-of-type {
     font-size: var(--font-size-card-title);
