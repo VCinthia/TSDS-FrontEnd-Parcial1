@@ -1,0 +1,112 @@
+h3 {
+    font-family: var(--font-title);
+    font-size: 2em;
+    color: white;
+    height: 1.2em;
+}
+span{
+    font: 600 0.7em var(--font-text);
+    padding: 0.5em;
+    background-color: #F4F4F4;
+    color: #333;
+
+}
+
+
+/*****************************************
+Galeria de imagenes
+*****************************************/
+
+.menu-section {
+    width: 92%;
+    margin: 2.5em auto;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.gallery-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(16, 10em);
+    grid-template-areas: 
+       "item0 item2"
+       "item0 item2"
+       "item1 item2"
+       "item1 item2"
+       "item3 item2"
+       "item3 item4"
+       "item3 item4"
+       "item5 item6"
+       "item5 item6"
+       "item5 item7"
+       "item5 item7"
+       "item5 item8"
+       "item9 item8"
+       "item9 item8"
+       "item10 item10"
+       "item10 item10";
+    gap: 1.8em;
+    width: 100%;
+    max-width: 1600px;
+    height: 100;
+    box-sizing: border-box;
+    margin: 0 auto;
+ }
+
+ 
+ #item-0 { grid-area: item0; }
+ #item-1 { grid-area: item1; }
+ #item-2 { grid-area: item2; }
+ #item-3 { grid-area: item3; }
+ #item-4 { grid-area: item4; }
+ #item-5 { grid-area: item5; }
+ #item-6 { grid-area: item6; }
+ #item-7 { grid-area: item7; }
+ #item-8 { grid-area: item8; }
+ #item-9 { grid-area: item9; }
+ #item-10 { grid-area: item10; }
+ 
+
+ .gallery-item{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    width: 100%;
+ }
+
+ .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .5s ease, transform .7s, filter .5s ease-in-out;
+    transform-origin: center center;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.09);
+}
+
+.cap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1.5em ;
+}
+.top-right{
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+.top-right span{
+  align-self: end;
+}
