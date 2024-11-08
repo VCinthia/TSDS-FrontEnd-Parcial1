@@ -8,20 +8,20 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/views-style/our-gin.css" />
+    <link rel="stylesheet" href="../styles/views-style/our-menu.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
-    rel="stylesheet">
-<link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-<!-- ICONS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!-- FAVICON -->
-<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -42,21 +42,33 @@
         </ul>
     </nav>
 
-    
-    <!--PRODUCTS SECCTION-->
-    <section class="prod-section">
-        <div id="prod-container" class="prod-container">
-            <!-- Ejemplo de un "prod-item" para mostrar la estructura de cada producto:
-             Este div muestra un producto con imágenes y título. Los demás "prod-item" se generarán
-             dinámicamente desde "our-gin.js" para evitar duplicación de código y permitir una
-             carga más flexible de productos en la página. -->
-            <div class="prod-item">
-                <div class="img-container">
-                    <img class="default-img" src="../img/our-gin/blu1.jpg" alt="botella Gin Spirito Blu">
-                    <img class="hover-img" src="../img/our-gin/blu2.jpg" alt="botella Gin Spirito Blu con copa">
+
+    <!--MENU SECCTION-->
+    <section class="menu-section">
+        <div class="gallery-container">
+            <div id="item-0" class="gallery-item">
+                <img src="../img/our-menu/lemonade.jpg" alt="gin limon">
+                <div class="cap">
+                    <span>DEJATE TENTAR CON NUESTROS</span>
+                    <h3>AROMAS</h3>
                 </div>
-                <h3>Gin Spirito Blu</h3>
             </div>
+            <div id="item-1" class="gallery-item"><img src="../img/our-menu/rose.jpg" alt="gin rose"></div>
+            <div id="item-2" class="gallery-item"><img src="../img/our-menu/fire.jpg" alt="gin fire"></div>
+            <div id="item-3" class="gallery-item"><img src="../img/our-menu/peach.jpg" alt="gin peach"></div>
+            <div id="item-4" class="gallery-item"><img src="../img/our-menu/blue.jpg" alt="gin blue"></div>
+            <div id="item-5" class="gallery-item">
+                <img src="../img/our-menu/fresh.jpg" alt="gin fresh">
+                <div class="cap top-right">
+                    <span>EN CADA MOMENTO DE TU DÍA</span>
+                    <h3>BEBIDAS<br>AROMÁTICAS</h3>
+                </div>
+            </div>
+            <div id="item-6" class="gallery-item"><img src="../img/our-menu/orange.jpg" alt="gin orange"></div>
+            <div id="item-7" class="gallery-item"><img src="../img/our-menu/exotic.jpg" alt="gin exoic"></div>
+            <div id="item-8" class="gallery-item"><img src="../img/our-menu/menta.jpg" alt="gin menta"></div>
+            <div id="item-9" class="gallery-item"><img src="../img/our-menu/juice.jpg" alt="gin juice"></div>
+            <div id="item-10" class="gallery-item"><img src="../img/our-menu/all.png" alt="gins"></div>
         </div>
     </section>
 
@@ -105,5 +117,6 @@
         </div>
     </footer>
 </body>
-<script src="../js/our-gin.js"></script>
+<!-- <script src="../js/our-gin.js"></script> -->
+
 </html>
