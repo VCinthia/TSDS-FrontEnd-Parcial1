@@ -1,6 +1,13 @@
 // Array con la información de cada producto
 const products = [
   {
+    defaultImgSrc: "../img/our-gin/blu1.jpg",
+    hoverImgSrc: "../img/our-gin/blu2.jpg",
+    defaultAlt: "botella Gin Spirito Blu",
+    hoverAlt: "botella Gin Spirito Blu con copa",
+    title: "Gin Spirito Blu",
+  },
+  {
     defaultImgSrc: "../img/our-gin/bombay1.jpg",
     hoverImgSrc: "../img/our-gin/bombay2.jpg",
     defaultAlt: "botella Bombay",
@@ -65,6 +72,10 @@ const products = [
   },
 ];
 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
 // Contenedor  donde se agregarán los elementos
 const productContainer = document.getElementById("prod-container");
 
@@ -97,4 +108,12 @@ products.forEach((product) => {
 
   productContainer.appendChild(prodItem);
   console.log("ejecutado");
+});
+
+  // Mostrar element
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+      section.style.display = 'block';
+  });
+  document.querySelector('footer').style.display = 'block';
 });

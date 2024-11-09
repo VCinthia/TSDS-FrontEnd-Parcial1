@@ -28,6 +28,7 @@
     --font-size-title-secondary: 1.875em;
     --font-size-title-medium: 0.875em;
     --font-size-card-title: 2.25em;
+    --font-size-card-subtitle: 0.7em;
     --font-size-card-btn: 2.25em;
     --font-size-section-title: 1.25em;
     --font-size-content: 0.875em;
@@ -43,10 +44,30 @@
     
     /* MARGINS */
     --margin-xxs: 0.35em;
+    --margin-xxss: 0.5em;
     --margin-xs: 0.9375em;
     --margin-s: 1.875em;
     --margin-m: 2.5em;
     
     /* BORDER RADIUS */
     --border-btn-social-media: 1.25em;
+
+    /* WIDTHS */
+    --max-width: 1600px;
+
+    /* SCALES */
+    --scale-m: 1.09;
+
+    /* TRANSITIONS */
+    --duration-xxs: 0.5s; 
+    --duration-xs: 1s; 
+    --duration-m: 1.5s; 
+    --duration-l: 2s; 
+
+    /* GAPS */
+    --gap-xxs: 0.5em;
+    --gap-xs: 1em;
+    --gap-s: 1.5em;
+    --gap-m: 2em;
+
 }
