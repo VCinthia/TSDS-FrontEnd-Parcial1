@@ -11,7 +11,7 @@ async function showElements() {
       await displayArticle(article);
     }
   
-    footer.style.display = "block";
+    footer.style.opacity = '1';
     console.log("footer loaded");
   }
   
@@ -19,7 +19,7 @@ async function showElements() {
 
   function displaySection(section) {
     return new Promise((resolve) => {
-      section.style.display = "block";
+      section.style.opacity = '1';
       console.log("sections loaded");
       resolve();
     });
@@ -27,8 +27,9 @@ async function showElements() {
   
   function displayArticle(article) {
     return new Promise((resolve) => {
-      article.style.display = "block";
+      article.style.opacity = '1';
       console.log("articles loaded");
+      
       resolve();
     });
   }

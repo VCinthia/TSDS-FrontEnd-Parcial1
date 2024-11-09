@@ -1,5 +1,6 @@
 article, footer{
-    display: none;
+    opacity: 0; 
+    transition: opacity 0.05s ease-in; 
 }
 
 .tutorials-article {
