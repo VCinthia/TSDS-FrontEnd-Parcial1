@@ -72,48 +72,59 @@ const products = [
   },
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Contenedor  donde se agregarán los elementos
+  const productContainer = document.getElementById("prod-container");
 
+  // Creacion de DIV por products
+  products.forEach((product) => {
+    const prodItem = document.createElement("div");
+    prodItem.classList.add("prod-item");
 
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("img-container");
 
-document.addEventListener('DOMContentLoaded', () => {
-// Contenedor  donde se agregarán los elementos
-const productContainer = document.getElementById("prod-container");
+    const defaultImg = document.createElement("img");
+    defaultImg.classList.add("default-img");
+    defaultImg.src = product.defaultImgSrc;
+    defaultImg.alt = product.defaultAlt;
 
-// Creacion de DIV por products
-products.forEach((product) => {
-  const prodItem = document.createElement("div");
-  prodItem.classList.add("prod-item");
+    const hoverImg = document.createElement("img");
+    hoverImg.classList.add("hover-img");
+    hoverImg.src = product.hoverImgSrc;
+    hoverImg.alt = product.hoverAlt;
 
-  const imgContainer = document.createElement("div");
-  imgContainer.classList.add("img-container");
+    imgContainer.appendChild(defaultImg);
+    imgContainer.appendChild(hoverImg);
 
-  const defaultImg = document.createElement("img");
-  defaultImg.classList.add("default-img");
-  defaultImg.src = product.defaultImgSrc;
-  defaultImg.alt = product.defaultAlt;
+    const title = document.createElement("h3");
+    title.textContent = product.title;
 
-  const hoverImg = document.createElement("img");
-  hoverImg.classList.add("hover-img");
-  hoverImg.src = product.hoverImgSrc;
-  hoverImg.alt = product.hoverAlt;
+    prodItem.appendChild(imgContainer);
+    prodItem.appendChild(title);
 
-  imgContainer.appendChild(defaultImg);
-  imgContainer.appendChild(hoverImg);
-
-  const title = document.createElement("h3");
-  title.textContent = product.title;
-
-  prodItem.appendChild(imgContainer);
-  prodItem.appendChild(title);
-
-  productContainer.appendChild(prodItem);
-  console.log("ejecutado");
-});
+    productContainer.appendChild(prodItem);
+    console.log("ejecutado");
+  });
 
   // Mostrar element
-  const sections = document.querySelectorAll('section');
-  sections.forEach(section => {
-      section.style.display = 'block';
-  });
-  document.querySelector('footer').style.display = 'block';
+  showElements();
 });
+
+async function showElements() {
+  const sections = document.querySelectorAll("section");
+  const footer = document.querySelector("footer");
+
+  for (const section of sections) {
+    await displaySection(section);
+  }
+
+  footer.style.display = "block";
+}
+
+function displaySection(section) {
+  return new Promise((resolve) => {
+    section.style.display = "block";
+    resolve();
+  });
+}
