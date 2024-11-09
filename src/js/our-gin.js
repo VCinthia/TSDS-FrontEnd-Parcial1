@@ -104,27 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
     prodItem.appendChild(title);
 
     productContainer.appendChild(prodItem);
-    console.log("ejecutado");
   });
 
   // Mostrar element
   showElements();
 });
-
-async function showElements() {
-  const sections = document.querySelectorAll("section");
-  const footer = document.querySelector("footer");
-
-  for (const section of sections) {
-    await displaySection(section);
-  }
-
-  footer.style.display = "block";
-}
-
-function displaySection(section) {
-  return new Promise((resolve) => {
-    section.style.display = "block";
-    resolve();
-  });
-}

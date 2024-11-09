@@ -69,5 +69,8 @@
     --gap-xs: 1em;
     --gap-s: 1.5em;
     --gap-m: 2em;
+    --gap-l: 3em;
+    --gap-xl: 4em;
+    --gap-xxl: 5em;
 
 }

@@ -1,6 +1,11 @@
 // Array con la información de cada recipt
 const recipts = [
   {
+    imgSrc: "../img/tutorials/botanico.jpg",
+    imgSrcAlt: "gin botánico",
+    title: "BOTÁNICO",
+  },
+  {
     imgSrc: "../img/tutorials/ciric.jpg",
     imgSrcAlt: "gin citric",
     title: "CITRIC",
@@ -27,6 +32,8 @@ const recipts = [
   },
 ];
 
+
+document.addEventListener("DOMContentLoaded", () => {
 // Contenedor  donde se agregarán los elementos
 const recipesContainer = document.getElementById("recipes-container");
 
@@ -55,5 +62,9 @@ recipts.forEach((recipt) => {
   recipesItem.appendChild(cap);
 
   recipesContainer.appendChild(recipesItem);
-  console.log("ejecutado");
+
+});
+
+  // Mostrar element
+  showElements();
 });

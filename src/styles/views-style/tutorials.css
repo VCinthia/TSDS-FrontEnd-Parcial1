@@ -1,3 +1,7 @@
+article, footer{
+    display: none;
+}
+
 .tutorials-article {
     width: 90%;
     max-width: 1600px;
@@ -29,14 +33,10 @@ div.intro>p:nth-child(5) {
 }
 
 
-/*****************************************************
-ARCICLE
-*****************************************************/
-
 .recipes-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5em;
+    gap: var(--gap-xxl);
     width: 80%;
     margin: 5em auto;
 }
@@ -51,7 +51,6 @@ ARCICLE
     font-size: 20px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 0.5em;
     width: 100%;
 }
 
@@ -103,3 +102,32 @@ h3 {
     background-color: var(--color-primary);
     display: block;
 }
+
+
+/*///////////////// RESPOSIVE///////////////*/
+
+@media (max-width: 1080px) {
+    .recipes-container {
+        gap: clamp(var(--gap-m), 1vw, var(--gap-xl));
+    }
+}
+
+
+@media (max-width: 768px) {
+    .recipes-container {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(var(--gap-xs), 1vw, var(--gap-s));    
+    }
+}
+
+
+@media (max-width: 480px) {
+    .recipes-container {
+        grid-template-columns: repeat(1, 1fr);       
+    }
+}
+
+@media (max-width: 375px) {
+}
+
