@@ -224,14 +224,17 @@ footer {
 
 .footer-section {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer-section-col {
     padding-top: var(--padding-s);
     padding-bottom: var(--padding-s);
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
 }
 
 .footer-section-col h3 {
@@ -368,4 +371,11 @@ button {
         align-items: center;
         justify-content: center;
     }
+
+    /* .footer-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    } */
 }
