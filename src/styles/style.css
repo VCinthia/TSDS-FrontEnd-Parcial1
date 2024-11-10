@@ -17,7 +17,12 @@ body {
 }
 
 .nav, .inf {
-    background-color: var(--color-blue);     
+    background-color: var(--color-blue);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--padding-s);
+    justify-content: space-between;
 }
 
 .nav div {
@@ -33,6 +38,7 @@ body {
     flex-direction: row;
     font-size: var(--font-size-content);
     padding: var(--padding-xxs);
+    transition: all 0.3s ease;
 }
 
 .nav ul li a {
@@ -49,6 +55,15 @@ body {
 .nav-logo {
     max-width: 5em;
     padding: 0.3125em 0;
+}
+
+.menu-toggle {
+    font-size: 2em;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
 }
 
 .footer-logo {
@@ -309,4 +324,48 @@ button {
     opacity: var(--opacity-white);
     font-size: var(--font-size-copyright);
     padding-bottom: 0.125em;
+}
+
+/* hamburger menu */
+
+@media (max-width: 804px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        left: 1em;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav ul {
+        display: none;
+        position: absolute;        
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 30em;
+        height: 100vh;
+        background-color: var(--color-blue);
+        justify-content: center;
+        z-index: 100;
+        transition: all 0.3s ease;
+    }
+
+    .nav ul.active {
+        display: flex;
+        position: fixed;
+        background: var(--color-darkgray);
+    }
+
+    .nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
