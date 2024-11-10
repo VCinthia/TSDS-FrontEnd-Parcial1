@@ -25,6 +25,7 @@ body {
     padding-left: var(--padding-s);
     padding-right: var(--padding-s);
     justify-content: space-between;
+    max-height: 80px;
 }
 
 .nav div {
