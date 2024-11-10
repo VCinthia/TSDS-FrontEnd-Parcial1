@@ -22,6 +22,8 @@ body {
     display: flex;
     align-items: center;
     padding: var(--padding-xxs-2);
+    padding-left: var(--padding-s);
+    padding-right: var(--padding-s);
     justify-content: space-between;
 }
 
