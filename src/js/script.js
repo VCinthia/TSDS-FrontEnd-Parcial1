@@ -1,5 +1,3 @@
-import { ourProducts, cards } from './home.js';
-import { productsList, cardsList } from './utils.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     function toggleMenu() {
@@ -20,6 +18,3 @@ function closeMenuOnClickOutside(event) {
 
 
 } document.addEventListener('click', closeMenuOnClickOutside);
-
-productsList(ourProducts);
-cardsList(cards);

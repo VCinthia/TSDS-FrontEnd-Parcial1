@@ -1,3 +1,5 @@
+import { ourProducts, cards } from './home.js';
+
 function productsList(products) {
     const slideProductsContainer = document.querySelector(".slide-products");
 
@@ -39,4 +41,5 @@ function cardsList(cards) {
     });
 }
 
-export { productsList, cardsList };
+productsList(ourProducts);
+cardsList(cards);
