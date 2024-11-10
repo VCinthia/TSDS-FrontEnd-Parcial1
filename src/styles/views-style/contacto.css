@@ -144,3 +144,9 @@
     }
     
 }
+
+@media (max-width: 380px) {
+    .contact-us-container{
+        padding: 0;
+    }
+}
