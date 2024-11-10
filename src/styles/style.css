@@ -62,9 +62,12 @@ section {
 
 /* --- banner-top --- */
 
-.banner-top{
+.banner-top {
     margin: 0;
     background: var(--img-banner-top);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: var(--font-title);
     color: var(--color-primary);
     padding: 25vh 3em!important;
@@ -80,6 +83,7 @@ section {
     bottom: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0) 70%);
     z-index: 1; 
+    
   }
 
 .banner-top div{
@@ -123,19 +127,19 @@ section {
 .banner-pre-footer {
     margin: 0;
     background: var(--img-banner-bottom);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: var(--font-title);
     color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
     padding-top: 25vh !important;
     padding-bottom: 25vh !important;
-
     background-attachment: scroll !important;
-    background-position: 0cm;  
-    position: relative;  
+    position: relative;
 }
 
 .banner-pre-footer::before {
