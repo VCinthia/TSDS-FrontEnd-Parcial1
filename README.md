@@ -1,6 +1,8 @@
-# Proyecto de Tienda de Gin
+# Tienda de Gin
 
-Este proyecto es un sitio web de una tienda de gin, diseñado para la materia `FrontEnd WEB` de carrera `Tecnicatura Superior en Desarrollo de Software`. Está construido utilizando HTML, CSS y JavaScript.
+Este proyecto es un sitio web de una `Tienda de Gin`, diseñado para la materia `FrontEnd WEB` de carrera `Tecnicatura Superior en Desarrollo de Software`. Está construido utilizando HTML, CSS y JavaScript.
+
+![Vista de la página principal](./screenshot-home.png)
 
 ## Estructura del Proyecto
 
@@ -46,8 +48,8 @@ Este proyecto es un sitio web de una tienda de gin, diseñado para la materia `F
 
 ## Enlaces del Proyecto
 
-- **Repositorio en GitHub**: [https://github.com/VCinthia/TSDS-FrontEnd-Parcial1](https://github.com/VCinthia/TSDS-FrontEnd-Parcial1)
-- **Despliegue en Vercel**: [https://tiendadegin.vercel.app/](https://tiendadegin.vercel.app/)
+- **Repositorio en GitHub**: [Repositorio FrontEnd Parcial 1](https://github.com/VCinthia/TSDS-FrontEnd-Parcial1)
+- **Despliegue en Vercel**: [Vercel App](https://tiendadegin.vercel.app/)
 
 ## Tecnologías Utilizadas
 
